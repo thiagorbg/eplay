@@ -1,14 +1,17 @@
 import { LinkCart, LinkTtem, LinksUl, NavBar, HeaderBar } from './styles'
 import logo from '../../assets/images/logo.svg'
 import carrinho from '../../assets/images/carrinho.svg'
+import { Link } from 'react-router-dom'
 
 const Header = () => (
   <HeaderBar>
     <NavBar>
-      <img src={logo} alt="Eplay" />
+      <Link to={'/'}>
+        <img src={logo} alt="Eplay" />
+      </Link>
       <LinksUl>
         <LinkTtem>
-          <a href="#">Categorias</a>
+          <Link to={'/Categories'}>Categorias</Link>
         </LinkTtem>
         <LinkTtem>
           <a href="#">Novidade</a>

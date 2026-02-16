@@ -1,5 +1,5 @@
 import { Imagem, Titulo, Precos } from './styles'
-import BannerImg from '../../../assets/images/banner-homem-aranha.png'
+import BannerImg from '../../assets/images/banner-homem-aranha.png'
 import Tag from '../tag'
 import Button from '../Button'
 
