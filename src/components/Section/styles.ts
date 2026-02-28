@@ -1,0 +1,20 @@
+import styled from 'styled-components'
+import { Props } from '.'
+import { cores } from '../../styles'
+import { Card } from '../Products/styles'
+
+export const Container = styled.section<Omit<Props, 'title' | 'games'>>`
+  padding: 32px 0;
+  background-color: ${(Props) =>
+    Props.background === 'black' ? cores.preta : cores.cinza};
+
+  ${Card} {
+    background-color: ${(Props) =>
+      Props.background === 'black' ? cores.cinza : cores.preta};
+  }
+`
+export const Title = styled.h2`
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 40px;
+`
