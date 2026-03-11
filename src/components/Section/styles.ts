@@ -12,6 +12,11 @@ export const Container = styled.section<Omit<Props, 'title' | 'games'>>`
     background-color: ${(Props) =>
       Props.background === 'black' ? cores.cinza : cores.preta};
   }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 640px;
+  }
 `
 export const Title = styled.h2`
   font-size: 18px;
